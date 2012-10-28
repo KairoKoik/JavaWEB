@@ -3,7 +3,7 @@
   <display-name>Praks1</display-name>
   <servlet>
     <servlet-name>updateGuard</servlet-name>
-    <servlet-class>i377.team6.yl3.updateGuard</servlet-class>
+    <servlet-class>i377.team6.yl3.servlet.updateGuard</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>updateGuard</servlet-name>
