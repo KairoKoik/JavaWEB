@@ -13,7 +13,6 @@ public class SpringApplicationContextTest {
 	@Test
 	public void test() {
 		IncidentSimulatorServiceImpl bean = ctx.getBean(IncidentSimulatorServiceImpl.class);
-		System.out.println(bean.getUnresolvedIncidents().get(0));
 		
 		Assert.assertNotNull(bean);
 	}
