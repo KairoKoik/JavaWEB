@@ -16,19 +16,27 @@
 	</configurations>
 
 	<dependencies>
-		<dependency org="javax.servlet" name="javax.servlet-api"
-			rev="3.0.1" conf="build->default" />
+		<dependency org="javax.servlet" name="javax.servlet-api" rev="3.0.1" conf="build->default" />
+		
+		<!-- Spring -->
 		<dependency org="org.springframework" name="org.springframework.core" rev="3.1.2.RELEASE" conf="source,runtime->default" /> 
 		<dependency org="org.springframework" name="org.springframework.context" rev="3.1.2.RELEASE" conf="source,runtime->default" />
 		<dependency org="commons-logging" name="commons-logging" rev="1.1.1" conf="runtime->default" />
+		
+		<!-- MVC -->
 		<dependency org="org.springframework" name="org.springframework.web" rev="3.1.2.RELEASE" conf="source,runtime->default" />
 		<dependency org="org.springframework" name="org.springframework.web.servlet" rev="3.1.2.RELEASE" conf="source,runtime->default" />
-		
 		<dependency org="cglib" name="cglib" rev="2.2.2" conf="runtime->default" /> 
 		<dependency org="org.codehaus.jackson" name="jackson-mapper-asl" rev="1.9.10" conf="runtime->default" />
 		<dependency org="javax.servlet" name="jstl" rev="1.2" conf="runtime->default" />
+		
+		<!-- Spring security -->
 		<dependency org="org.springframework.security" name="spring-security-web" rev="3.1.2.RELEASE" conf="runtime->default" /> 
  		<dependency org="org.springframework.security" name="spring-security-config" rev="3.1.2.RELEASE" conf="runtime->default" /> 
  		<dependency org="org.springframework.security" name="spring-security-taglibs" rev="3.1.2.RELEASE" conf="runtime->default" />
+ 		
+ 		<!-- JPA -->
+		<dependency name="hsqldb" rev="1.8.0.10" org="hsqldb" conf="runtime->default" />
+		<dependency name="hibernate-entitymanager" rev="4.1.7.Final" org="org.hibernate" conf="runtime->default" />
 	</dependencies>
 </ivy-module>
