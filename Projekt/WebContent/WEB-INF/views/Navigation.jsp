@@ -9,11 +9,12 @@
 <body>
 <div style="float:left; border:1px solid grey; padding-right:15px;">
 <ul>
-<li><a href="Piirivalvur.jsp">Piirivalvuri vorm</a></li>
-<li><a href="Vaeosa.jsp">Väeosa vorm</a></li>
-<li><a href="Amet.jsp">Ameti vorm</a></li>
-<li><a href="AmetVaeosas.jsp">Amet väeosas</a></li>
-<li><a href="PiirivalvurVaeosas.jsp">Piirivalvur väeosas</a></li>
+<li><a href="Piirivalvur">Piirivalvuri vorm</a></li>
+<li><a href="Vaeosa">Väeosa vorm</a></li>
+<li><a href="Amet">Ameti vorm</a></li>
+<li><a href="AmetVaeosas">Amet väeosas</a></li>
+<li><a href="PiirivalvurVaeosas">Piirivalvur väeosas</a></li>
+<li><a href="j_spring_security_logout">Välju</a></li>
 </ul>
 </div>
 </body>

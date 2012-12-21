@@ -8,18 +8,18 @@
 </head>
 <body>
 <div style="border:1px solid grey; width:160px; margin-left:auto;margin-right:auto;margin-top:250px;">
- <FORM ACTION="out.jsp" METHOD="POST" style="margin-bottom: 5px;">
+ <FORM ACTION='j_spring_security_check' METHOD="POST" style="margin-bottom: 5px;">
     <table width="150" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto; margin-right:auto;  ">
   <tr>
     <td>Nimi: <br />
-    <INPUT TYPE="TEXT" NAME="Nimi"></td>
+    <INPUT TYPE="TEXT" NAME='j_username' value=''></td>
   </tr>
   <tr>
     <td>Parool: <br />
-    <INPUT TYPE="TEXT" NAME="Parool"></td>
+    <INPUT TYPE="password" NAME='j_password' ></td>
   </tr>
   <tr>
-    <td><input name="Sisene" type="button" value="Sisene" class="buttons" style="float:left;" >
+    <td><input name="submit" type="submit" value="Sisene" class="buttons" style="float:left;" >
     <input name="Tühista" type="button" value="Tühista" class="buttons" style="float:right;">
 </td>
   </tr>

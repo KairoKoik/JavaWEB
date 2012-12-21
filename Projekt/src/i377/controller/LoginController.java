@@ -8,8 +8,18 @@ import org.springframework.web.bind.annotation.*;
 public class LoginController {
 
 	@RequestMapping(value="/Login")
+	public String login (Model model){
+		return "Login";
+	}
+	
+	@RequestMapping(value="/")
 	public String main (Model model){
 		return "Login";
+	}
+	
+	@RequestMapping(value="/Navigation")
+	public String Navigation(){
+		return "Navigation";
 	}
 	
 }
