@@ -2,6 +2,7 @@ package i377.entities;
 
 import java.io.Serializable;
 import javax.persistence.*;
+import java.sql.Timestamp;
 import java.util.List;
 
 
@@ -18,6 +19,10 @@ public class Piirivalvur implements Serializable {
 
 	private String aadress;
 
+	private String createdby;
+
+	private Timestamp createdon;
+
 	private String eesnimi;
 
 	private String email;
@@ -25,6 +30,10 @@ public class Piirivalvur implements Serializable {
 	private String isikukood;
 
 	private String kommentaar;
+
+	private String modifiedby;
+
+	private Timestamp modifiedon;
 
 	private String perekonnanimi;
 
@@ -59,6 +68,22 @@ public class Piirivalvur implements Serializable {
 		this.aadress = aadress;
 	}
 
+	public String getCreatedby() {
+		return this.createdby;
+	}
+
+	public void setCreatedby(String createdby) {
+		this.createdby = createdby;
+	}
+
+	public Timestamp getCreatedon() {
+		return this.createdon;
+	}
+
+	public void setCreatedon(Timestamp createdon) {
+		this.createdon = createdon;
+	}
+
 	public String getEesnimi() {
 		return this.eesnimi;
 	}
@@ -89,6 +114,22 @@ public class Piirivalvur implements Serializable {
 
 	public void setKommentaar(String kommentaar) {
 		this.kommentaar = kommentaar;
+	}
+
+	public String getModifiedby() {
+		return this.modifiedby;
+	}
+
+	public void setModifiedby(String modifiedby) {
+		this.modifiedby = modifiedby;
+	}
+
+	public Timestamp getModifiedon() {
+		return this.modifiedon;
+	}
+
+	public void setModifiedon(Timestamp modifiedon) {
+		this.modifiedon = modifiedon;
 	}
 
 	public String getPerekonnanimi() {

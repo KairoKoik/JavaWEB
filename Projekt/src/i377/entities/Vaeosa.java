@@ -2,6 +2,7 @@ package i377.entities;
 
 import java.io.Serializable;
 import javax.persistence.*;
+import java.sql.Timestamp;
 import java.util.List;
 
 
@@ -16,9 +17,17 @@ public class Vaeosa implements Serializable {
 	@Id
 	private long id;
 
+	private String createdby;
+
+	private Timestamp createdon;
+
 	private String kommentaar;
 
 	private String kood;
+
+	private String modifiedby;
+
+	private Timestamp modifiedon;
 
 	private String nimetus;
 
@@ -43,6 +52,22 @@ public class Vaeosa implements Serializable {
 		this.id = id;
 	}
 
+	public String getCreatedby() {
+		return this.createdby;
+	}
+
+	public void setCreatedby(String createdby) {
+		this.createdby = createdby;
+	}
+
+	public Timestamp getCreatedon() {
+		return this.createdon;
+	}
+
+	public void setCreatedon(Timestamp createdon) {
+		this.createdon = createdon;
+	}
+
 	public String getKommentaar() {
 		return this.kommentaar;
 	}
@@ -57,6 +82,22 @@ public class Vaeosa implements Serializable {
 
 	public void setKood(String kood) {
 		this.kood = kood;
+	}
+
+	public String getModifiedby() {
+		return this.modifiedby;
+	}
+
+	public void setModifiedby(String modifiedby) {
+		this.modifiedby = modifiedby;
+	}
+
+	public Timestamp getModifiedon() {
+		return this.modifiedon;
+	}
+
+	public void setModifiedon(Timestamp modifiedon) {
+		this.modifiedon = modifiedon;
 	}
 
 	public String getNimetus() {

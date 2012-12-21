@@ -19,9 +19,17 @@ public class AmetVaeosas implements Serializable {
 
 	private Timestamp alates;
 
+	private String createdby;
+
+	private Timestamp createdon;
+
 	private String kommentaar;
 
 	private Timestamp kuni;
+
+	private String modifiedby;
+
+	private Timestamp modifiedon;
 
 	private int version;
 
@@ -56,6 +64,22 @@ public class AmetVaeosas implements Serializable {
 		this.alates = alates;
 	}
 
+	public String getCreatedby() {
+		return this.createdby;
+	}
+
+	public void setCreatedby(String createdby) {
+		this.createdby = createdby;
+	}
+
+	public Timestamp getCreatedon() {
+		return this.createdon;
+	}
+
+	public void setCreatedon(Timestamp createdon) {
+		this.createdon = createdon;
+	}
+
 	public String getKommentaar() {
 		return this.kommentaar;
 	}
@@ -70,6 +94,22 @@ public class AmetVaeosas implements Serializable {
 
 	public void setKuni(Timestamp kuni) {
 		this.kuni = kuni;
+	}
+
+	public String getModifiedby() {
+		return this.modifiedby;
+	}
+
+	public void setModifiedby(String modifiedby) {
+		this.modifiedby = modifiedby;
+	}
+
+	public Timestamp getModifiedon() {
+		return this.modifiedon;
+	}
+
+	public void setModifiedon(Timestamp modifiedon) {
+		this.modifiedon = modifiedon;
 	}
 
 	public int getVersion() {
