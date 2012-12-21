@@ -1,13 +1,14 @@
 package i377.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class LoginController {
 
-	@RequestMapping("/")
-	public String login (){
+	@RequestMapping(value="/Login")
+	public String main (Model model){
 		return "Login";
 	}
 	

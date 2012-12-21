@@ -6,20 +6,17 @@
            http://www.springframework.org/schema/security
            http://www.springframework.org/schema/security/spring-security-3.1.xsd">
 
-
 	<http pattern="/login*" security="none"/>
-	<http pattern="/loginfailed" security="none"/>
-
-
+	<http pattern="/login?error=true" security="none"/>
+	
 	<global-method-security secured-annotations="enabled" />
 
-
 	<http auto-config='true'>
-		<form-login login-page="/login" default-target-url="/" 
+		<form-login login-page="/Login" default-target-url="/Login" 
 			always-use-default-target="true"
-			authentication-failure-url="/login?error=true" />
-		<logout logout-success-url="/logout" />
-		<intercept-url pattern="/**" access="ROLE_VIEW" />
+			authentication-failure-url="/Login?error=true" />
+	<!-- <logout logout-success-url="/logout" />  -->
+	<intercept-url pattern="/**" access="ROLE_VIEW" />
 	</http>
 
 	<authentication-manager>

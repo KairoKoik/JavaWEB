@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class AmetController {
 
-	@RequestMapping(value="/Amet")
-	public String amet() {
+	@RequestMapping("/Amet")
+	public String Amet() {
 		return "Amet";
 	}
 }

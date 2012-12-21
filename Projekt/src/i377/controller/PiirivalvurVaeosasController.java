@@ -4,11 +4,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class PiirivalvurController {
+public class PiirivalvurVaeosasController {
 
-	@RequestMapping(value="/Piirivalvur")
-	public String Piirivalvur() {
-		return "Piirivalvur";
+	@RequestMapping(value="/PiirivalvurVaeosas")
+	public String PiirivalvurVaeosas() {
+		return "PiirivalvurVaeosas";
 	}
 	
 }

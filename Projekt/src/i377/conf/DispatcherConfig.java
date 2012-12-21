@@ -11,7 +11,7 @@ import org.springframework.web.servlet.view.*;
 public class DispatcherConfig extends WebMvcConfigurerAdapter{
 	
 	@Bean
-	public InternalResourceViewResolver jspResolver() {
+	public InternalResourceViewResolver jspResolver(){
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
 		resolver.setViewClass(JstlView.class);
 		resolver.setPrefix("/WEB-INF/views/");

@@ -17,21 +17,26 @@ public class SpringInit implements WebApplicationInitializer{
 	public void onStartup(ServletContext arg0) throws ServletException {
 		
 		AnnotationConfigWebApplicationContext rootContext = 
-				new AnnotationConfigWebApplicationContext();
-		
-		rootContext.register(DispatcherConfig.class);
-		
-		ServletRegistration.Dynamic dispatcher = 
-				arg0.addServlet("dispatcher", new DispatcherServlet(rootContext));
-		
-		dispatcher.setLoadOnStartup(1);
-		dispatcher.addMapping("/");
-		
-		arg0.addListener(new ContextLoaderListener(rootContext));
-		
-		FilterRegistration.Dynamic securityFilter = 
-				arg0.addFilter("springSecurityFilterChain", DelegatingFilterProxy.class);
+    			new AnnotationConfigWebApplicationContext();
+        
+    	rootContext.register(DispatcherConfig.class);
+
+
+        // Create the dispatcher servlet's Spring application context
+        ServletRegistration.Dynamic dispatcher = 
+        		arg0.addServlet("dispatcher", new DispatcherServlet(rootContext));
+        
+        dispatcher.setLoadOnStartup(1);
+        dispatcher.addMapping("/");
+
+
+        arg0.addListener(new ContextLoaderListener(rootContext));
+        
+        // Spring Security
+        FilterRegistration.Dynamic securityFilter = 
+        		arg0.addFilter("springSecurityFilterChain", DelegatingFilterProxy.class);
 		securityFilter.addMappingForUrlPatterns(null, false, "/*");
+
 	}
 
 }
