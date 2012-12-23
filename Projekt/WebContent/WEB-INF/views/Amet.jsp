@@ -11,7 +11,7 @@ td {text-align:left;}
 <title>Ameti vorm</title>
 </head>
 <body>
- <FORM ACTION="Amet" METHOD="POST">
+ <FORM ACTION="AddAmet" METHOD="POST">
       <table width="400" border="0" cellspacing="0" cellpadding="0" style="margin-left:50px;">
   
   <tr>

@@ -11,7 +11,7 @@ td {text-align:left;}
 <title>Väeosa vorm</title>
 </head>
 <body>
- <FORM ACTION="Vaeosa" METHOD="POST">
+ <FORM ACTION="AddVaeosa" METHOD="POST">
       <table width="400" border="0" cellspacing="0" cellpadding="0" style="margin-left:50px;">
   
   <tr>

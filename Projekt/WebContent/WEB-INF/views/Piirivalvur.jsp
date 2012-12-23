@@ -11,7 +11,7 @@ td {text-align:left;}
 <title>Piirivalvuri vorm</title>
 </head>
 <body>
- <FORM ACTION="Piirivalvur" METHOD="POST">
+ <FORM ACTION="AddPiirivalvur" METHOD="POST">
       <table width="400" border="0" cellspacing="0" cellpadding="0" style="margin-left:50px;">
   <tr>
     <td width="168"> Sõduri kood:
