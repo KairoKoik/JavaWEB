@@ -20,7 +20,7 @@
   </tr>
   <tr>
     <td><input name="submit" type="submit" value="Sisene" class="buttons" style="float:left;" >
-    <input name="Tühista" type="button" value="Tühista" class="buttons" style="float:right;">
+    <input name="Tühista" type="reset" value="Tühista" class="buttons" style="float:right;">
 </td>
   </tr>
 

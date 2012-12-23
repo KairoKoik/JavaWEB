@@ -11,7 +11,7 @@ td {text-align:left;}
 <title>Ameti vorm</title>
 </head>
 <body>
- <FORM ACTION="../Documents/out.jsp" METHOD="POST">
+ <FORM ACTION="Amet" METHOD="POST">
       <table width="400" border="0" cellspacing="0" cellpadding="0" style="margin-left:50px;">
   
   <tr>
@@ -26,8 +26,8 @@ td {text-align:left;}
   </tr>
    
   <tr>
-    <td ><input name="Salvesta" type="button" value="Salvesta" class="buttons" style="float:right;"></td>
-    <td > <input name="Katkesta" type="button" value="Katkesta" class="buttons">
+    <td ><input name="Salvesta" type="submit" value="Salvesta" class="buttons" style="float:right;"></td>
+    <td > <input name="Katkesta" type="reset" value="Katkesta" class="buttons">
     <input name="Kustuta" type="button" value="Kustuta" class="buttons">
     </td>
   </tr>
