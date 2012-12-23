@@ -14,7 +14,12 @@ public class PiirivalvurVaeosas implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
+
+	private String closedby;
+
+	private Timestamp closedon;
 
 	private String createdby;
 
@@ -52,6 +57,22 @@ public class PiirivalvurVaeosas implements Serializable {
 
 	public void setId(long id) {
 		this.id = id;
+	}
+
+	public String getClosedby() {
+		return this.closedby;
+	}
+
+	public void setClosedby(String closedby) {
+		this.closedby = closedby;
+	}
+
+	public Timestamp getClosedon() {
+		return this.closedon;
+	}
+
+	public void setClosedon(Timestamp closedon) {
+		this.closedon = closedon;
 	}
 
 	public String getCreatedby() {

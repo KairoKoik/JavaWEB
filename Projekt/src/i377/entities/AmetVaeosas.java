@@ -15,9 +15,14 @@ public class AmetVaeosas implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
 
 	private Timestamp alates;
+
+	private String closedby;
+
+	private Timestamp closedon;
 
 	private String createdby;
 
@@ -62,6 +67,22 @@ public class AmetVaeosas implements Serializable {
 
 	public void setAlates(Timestamp alates) {
 		this.alates = alates;
+	}
+
+	public String getClosedby() {
+		return this.closedby;
+	}
+
+	public void setClosedby(String closedby) {
+		this.closedby = closedby;
+	}
+
+	public Timestamp getClosedon() {
+		return this.closedon;
+	}
+
+	public void setClosedon(Timestamp closedon) {
+		this.closedon = closedon;
 	}
 
 	public String getCreatedby() {

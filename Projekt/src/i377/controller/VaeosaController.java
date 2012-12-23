@@ -11,4 +11,9 @@ public class VaeosaController {
 		return "Vaeosa";
 	}
 	
+	@RequestMapping(value="/AddVaeosa")
+	public String addVaeosa() {
+		return "Vaeosa";
+	}
+	
 }

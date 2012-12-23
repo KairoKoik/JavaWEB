@@ -5,6 +5,10 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.List;
 
+@NamedQueries({
+    @NamedQuery(name="Amet.findAll", query="SELECT a FROM Amet a")
+})
+
 
 /**
  * The persistent class for the AMET database table.
@@ -15,6 +19,7 @@ public class Amet implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
 
 	private String closedby;

@@ -11,4 +11,9 @@ public class PiirivalvurController {
 		return "Piirivalvur";
 	}
 	
+	@RequestMapping(value="/AddPiirivalvur")
+	public String AddPiirivalvur() {
+		return "Piirivalvur";
+	}
+	
 }
